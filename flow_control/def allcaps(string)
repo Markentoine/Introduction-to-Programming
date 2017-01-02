@@ -1,0 +1,7 @@
+def allcaps(string)
+if string.length>10
+  puts string.upcase
+end
+end
+
+allcaps("je veux bien revenir de là si tu acceptes")

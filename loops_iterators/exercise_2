@@ -1,0 +1,14 @@
+#Write a while loop that takes input from the user, performs an action, and only stops when the user types "STOP". Each loop can get info from the user.
+
+while 1
+  puts "Welcome in loop! Enter something!"
+  input=gets.chomp
+  input_2=input.upcase
+  if input=="STOP"
+    puts "Ok! No problem!"
+    break
+  else
+    puts "So you wrote : #{input} ?"
+    puts "I prefer #{input_2} !"
+  end
+end

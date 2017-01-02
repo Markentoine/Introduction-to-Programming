@@ -1,0 +1,18 @@
+contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
+            ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
+
+contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
+
+
+order=0
+  contacts.each do |name, value|
+    
+    value[:mail] = contact_data[order][0]
+    value[:adress] = contact_data[order][1]
+    value[:tel] = contact_data[order][2]
+    order+=1  
+    
+  end
+  
+
+p "The email of Joe Smith is #{contacts["Joe Smith"][:mail]}."

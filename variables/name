@@ -1,0 +1,6 @@
+puts "What is your first name, please? "
+name=gets.chomp
+puts "What is your last name, please? "
+last_name=gets.chomp
+puts "Welcome #{name} #{last_name}!"
+10.times { puts ("#{name} #{last_name}")  }

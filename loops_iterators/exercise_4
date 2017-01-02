@@ -1,0 +1,12 @@
+#Write a method that counts down to zero using recursion.
+number=gets.chomp
+number=number.to_i
+def count_down (n)
+  if n==0
+    puts "Ding!"
+  else
+    puts n
+    count_down(n-1)
+  end
+end
+  count_down(number)

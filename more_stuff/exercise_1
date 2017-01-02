@@ -1,0 +1,7 @@
+list=["laboratory","experiment","Pans Labyrinth","elaborate","polar bear"]
+
+list.each do |word|
+  if word =~ /lab/
+    puts word
+  end
+end

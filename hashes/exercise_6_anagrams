@@ -1,0 +1,31 @@
+#Write a program that prints out groups of words that are anagrams
+
+def anagrams(words)
+  while words!=[]
+  
+    ana_list=[]
+    ana_list<<words[0]
+    mapword=words[0].split('')
+    words.delete(words[0])
+    w_to_delete=[]
+    
+    words.each do |compare|
+      
+      if mapword.sort==compare.split('').sort
+        ana_list<<compare
+        w_to_delete<<compare
+       end
+       
+    end
+    
+    words=words.reject { |e| w_to_delete.include?(e) } 
+    p ana_list  
+    
+  end  
+end
+
+words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
+          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
+          'flow', 'neon']
+          
+anagrams(words)

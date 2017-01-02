@@ -1,0 +1,21 @@
+def givanumber
+
+  puts "Give me a number, your majesty!"
+  number=gets.chomp.to_i
+
+  def whichcase(number)
+    case 
+    when number<51
+      puts "Your number is between 0 and 50."
+    when  number>50 && number<101
+      puts "Your number is between 51 and 100."
+    else
+      puts "Your number is above 100."
+    end
+  end
+
+  whichcase(number)
+
+end
+
+givanumber

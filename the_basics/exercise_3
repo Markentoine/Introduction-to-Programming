@@ -1,0 +1,6 @@
+movies = { La_Traversée_de_Paris: 1956, :"La Grande Vadrouille" => 1966, :"L'Aile ou la Cuisse" => 1976, :"La Folie des Grandeurs" => 1971, :"Le Petit Baigneur"=> 1968 }
+puts movies[:La_Traversée_de_Paris]
+puts movies[:"La Grande Vadrouille"]
+puts movies[:"L'Aile ou la Cuisse"]
+puts movies[:"La Folie des Grandeurs"]
+puts movies[:"Le Petit Baigneur"]
